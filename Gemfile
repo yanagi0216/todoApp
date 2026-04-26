@@ -70,3 +70,5 @@ gem 'bootstrap', '~> 5.3.8'
 
 gem "dartsass-rails"
 
+#ログイン機能device
+gem "devise", '~> 4.2'
