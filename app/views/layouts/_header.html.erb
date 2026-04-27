@@ -1,6 +1,6 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <%= link_to 'ToDo App', root_path, class: "navbar-brand" %>
-  <button
+  <%# <button
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
@@ -10,5 +10,15 @@
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> %>
+
+  <div class="d-flex justify-content-end">
+    <% if user_signed_in? %>
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+    <% else %>  
+      <div class="p-2">Flex item 3</div>
+    <% end %>
+  </div>
+
 </header>

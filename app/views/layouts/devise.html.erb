@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Todo App">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag :"application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render "layouts/header" %>
+    <%= render "layouts/flash" %>
+    <main class="bg-home d-flex align-items-center w-100 h-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-11 col-lg-5 jumbotron mx-auto mt-4" style="box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.2)">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
+
+
+    
