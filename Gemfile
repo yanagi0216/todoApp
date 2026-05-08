@@ -71,7 +71,7 @@ gem 'bootstrap', '~> 5.3.8'
 gem "dartsass-rails"
 
 #ログイン機能device
-gem "devise", '~> 4.2'
+gem "devise", '~> 5.0'
 
 #manage sort order
 gem 'acts_as_list','~> 0.9.19'
