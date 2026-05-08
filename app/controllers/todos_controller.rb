@@ -33,7 +33,7 @@ class TodosController < ApplicationController
   def update
     if @todo.update(todo_params)
       @status = true
-      else
+    else
       @status = false
     end
   end
