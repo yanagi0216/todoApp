@@ -74,5 +74,5 @@ gem "dartsass-rails"
 gem "devise", '~> 4.2'
 
 #manage sort order
-gem 'acts_as_list','~> 0.9.19'
+gem 'acts_as_list','~> 1.2.6'
 
