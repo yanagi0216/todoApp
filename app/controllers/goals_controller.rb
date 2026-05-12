@@ -21,7 +21,7 @@ class GoalsController < ApplicationController
     @goal = current_user.goals.new(goal_params)
 
     if @goal.save
-      # redirect_to @goal, notice: "Goal was successfully created."
+      redirect_to goals_path
       @status = true
     else
       # render :new, status: :unprocessable_content
